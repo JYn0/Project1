@@ -100,3 +100,15 @@ INSERT INTO TEAM VALUES('TIGERS','광주기아 챔피언스필드', '-', T_ID.NE
 INSERT INTO T_HISTORY VALUES (2018, 'TIGERS', 5, 2, 70, 74, 0)
 ```
 
+```SQL
+INSERT INTO PLAYER VALUES(101, 'kt_50.jpg', '강백호', 'H', 'WIZ')
+INSERT INTO PLAYER VALUES(102, 'kt_43.jpg', '김민', 'P', 'WIZ')
+INSERT INTO PLAYER VALUES(103, 'kia_16.jpg', '김주찬', 'H', 'TIGERS')
+INSERT INTO PLAYER VALUES(104, 'kia_54.jpg', '양현종', 'P', 'TIGERS')
+INSERT INTO PLAYER VALUES(105, 'nc_25.jpg', '양의지', 'H', 'DINOS')
+INSERT INTO PLAYER VALUES(106, 'kiwoom_51.jpg', '이정후', 'H', 'HEROES')
+INSERT INTO PLAYER VALUES(107, 'lg_22.jpg', '김현수', 'H', 'TWINS')
+INSERT INTO PLAYER VALUES(108, 'doosan_22.jpg', '박건우', 'H', 'BEARS')
+INSERT INTO PLAYER VALUES(109, 'sk_29.jpg', '김광현', 'P', 'WYVERNS')
+
+```
