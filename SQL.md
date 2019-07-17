@@ -109,7 +109,7 @@ INSERT INTO PLAYER VALUES(104, 'kia_54.jpg', '양현종', 'P', 'TIGERS')
 INSERT INTO PLAYER VALUES(105, 'nc_25.jpg', '양의지', 'H', 'DINOS')
 INSERT INTO PLAYER VALUES(106, 'kiwoom_51.jpg', '이정후', 'H', 'HEROES')
 INSERT INTO PLAYER VALUES(107, 'lg_22.jpg', '김현수', 'H', 'TWINS')
-INSERT INTO PLAYER VALUES(108, 'doosan_22.jpg', '박건우', 'H', 'BEARS')
+INSERT INTO PLAYER VALUES(108, 'doosan_37.jpg', '박건우', 'H', 'BEARS')
 INSERT INTO PLAYER VALUES(109, 'sk_29.jpg', '김광현', 'P', 'WYVERNS')
 
 INSERT INTO TEAM VALUES ('WIZ', '수원 KT WIZ 파크', '이강철', 1, 0)
