@@ -38,8 +38,8 @@ CREATE TABLE PLAYER
 CREATE TABLE P_HISTORY
 (
     TEAM       VARCHAR2(20)    NULL, 
-    ERA        VARCHAR2(20)    NULL, 
-    GAME       VARCHAR2(20)    NULL, 
+    ERA        NUMBER          NULL, 
+    GAME       NUMBER          NULL, 
     AVG        NUMBER          NULL, 
     HR         NUMBER          NULL, 
     YEAR       NUMBER          NULL, 
