@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.PDetailMapper">
+
+	<!-- <select id="selectallPD" resultType="pdetail">
+		SELECT p.ID, p.PIC, p.NAME,
+		p.POSITION, p.TEAM, ph.ERA, ph.GAME, ph.AVG, ph.HR, ph.YEAR, ph.WPCT,
+		ph.BACKNUM
+		FROM PLAYER p, P_HISTORY ph
+		WHERE p.ID = ph.ID
+	</select>
+
+	<select id="selectPD" parameterType="Integer"
+		resultType="pdetail">
+		SELECT p.ID, p.PIC, p.NAME, p.POSITION, p.TEAM,
+		ph.ERA,
+		ph.GAME, ph.AVG, ph.HR, ph.YEAR, ph.WPCT, ph.BACKNUM
+		FROM PLAYER p,
+		P_HISTORY ph
+		WHERE p.ID = ph.ID and p.ID=#{obj}
+	</select>
+ -->	
+	
+	
+	<select id="selectallPD" resultType="pdetail">
+		SELECT * FROM P_HISTORY ORDER BY ID ASC
+	</select>
+
+	<select id="selectPD" parameterType="Integer" resultType="pdetail">
+		SELECT * FROM P_HISTORY WHERE ID=#{obj} ORDER BY ID ASC
+	</select>
+
+	<insert id="insertPD" parameterType="pdetail">
+		INSERT INTO P_HISTORY VALUES
+		(#{team},#{era},#{game},#{avg},#{hr},#{year},#{wpct},#{backnum},#{id})
+	</insert>
+
+	<delete id="deletePD" parameterType="Integer">
+		DELETE FROM P_HISTORY WHERE ID=#{obj}
+	</delete>
+
+	<update id="updatePD" parameterType="pdetail">
+		UPDATE P_HISTORY SET TEAM=#{team},ERA=#{era},GAME=#{game},AVG=#{avg},HR=#{hr},YEAR=#{year},WPCT=#{wpct},BACKNUM=#{backnum} WHERE ID=#{id}
+	</update>
+</mapper>
+
+
+<!-- <update id="updatePD1" parameterType="pdetail"> UPDATE PLAYER SET PIC=#{pic}, 
+	NAME=#{name},IMGNAME=#{imgname} WHERE ID=#{id} </update> <update id="updatePD2" 
+	parameterType="pdetail"> UPDATE P_HISTORY SET PIC=#{pic}, ERA=#{era},GAME=#{game},AVG=#{avg},HR=#{hr},YEAR=#{year}, 
+	WPCT=#{wpct},BACKNUM=#{backnum} WHERE ID=#{id} </update> -->
+
+
+
+
+<!-- <insert id="insert" parameterType="player"> INSERT INTO T_PRODUCT VALUES 
+	(PSEQ.NEXTVAL,#{name},#{price},SYSDATE,#{imgname}) </insert> <update id="update" 
+	parameterType="player"> UPDATE T_PRODUCT SET NAME=#{name},PRICE=#{price},IMGNAME=#{imgname} 
+	WHERE ID=#{id} </update> <delete id="delete" parameterType="INTEGER"> DELETE 
+	FROM T_PRODUCT WHERE ID=#{obj} </delete> -->
+
+
+
+
+
+
+

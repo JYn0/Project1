@@ -1,0 +1,27 @@
+package com.controller;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.springframework.web.multipart.MultipartFile;
+
+public class Util {
+	
+	public static void saveFile(MultipartFile mf) {
+		byte [] data;
+		String imgname = mf.getOriginalFilename();
+		String dir="C:\\spring\\sport\\web\\images\\";
+		try {
+			data = mf.getBytes();
+			FileOutputStream fo = new FileOutputStream(dir+imgname);
+			fo.write(data);	
+			fo.close();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

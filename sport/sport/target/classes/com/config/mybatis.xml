@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.vo.User" alias="user"/>
+	    <typeAlias type="com.vo.Player" alias="player"/>
+	    <typeAlias type="com.vo.Team" alias="team"/>
+	    <typeAlias type="com.vo.TeamH" alias="th"/>
+	    <typeAlias type="com.vo.PDetail" alias="pdetail"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="com/config/usermapper.xml"/>
+		<mapper resource="com/config/playermapper.xml"/>
+		<mapper resource="com/config/teammapper.xml"/>
+		<mapper resource="com/config/teamhmapper.xml"/>
+		<mapper resource="com/config/pdetailmapper.xml"/>
+	</mappers>
+</configuration>
+
+
+
+
+
+
